@@ -1,9 +1,0 @@
-1-How do I create a hidden file or folder? How do I display it in CLI?
-= By adding . in front // touch .newSecretFile2
-= Typing ls -a will show hidden files
-
-2-How do I create multiple nested directories, like /c/Users/myusername/these/folders/are/just/for/fun?
-= with -p in front // mkdir -p test1/test2/test3
-
-3-How do I append a message to a file, without a newline character, so the output would be:
-= with printf // printf second message >> test.txt
