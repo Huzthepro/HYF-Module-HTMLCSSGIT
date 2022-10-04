@@ -1,1 +1,142 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: 'Comfortaa', sans-serif;
+  color: #1B1B1B;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(background1.png);
+  background-position:right;
+  background-repeat: no-repeat;
+  background-size:contain;
+}
 
+.main{
+  width: 60%;
+}
+
+.twoColumn {
+  float: left;
+  width: 50%; /* For 2 column rows*/
+}
+
+h1{
+color: #2E4425;
+}
+
+hr{
+  width: 30%;
+  margin: auto;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  height: 4px;
+  border: 0px;
+  border-radius: 5px;
+  background-color: #95DC84;
+}
+.row{
+  text-align: center;
+}
+
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+} /*Clearfix hack. Otherwise; elements after a floating element will flow around it*/
+
+.inside{
+  position: relative;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 25px;
+  height: 130px;
+  background:rgba(235, 245, 251, 0.24);
+  background-image: url(snow.png);
+  background-position:right;
+  background-repeat: repeat;
+  background-size:auto;
+}
+
+.huzFoto{
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 90%;
+  vertical-align:bottom; /* to clear gap under image*/
+}
+
+.marginTop{
+  margin-top: 30px;
+}
+.leftAlign{
+text-align: left;
+margin-left: 25px;
+}
+.education{
+  position: absolute;
+  left: 9px;
+  bottom: 9px;
+  width: 40px;
+}
+.experience{
+  position: absolute;
+  right: 9px;
+  bottom: 9px;
+  width: 40px;
+}
+
+ul{
+  margin-top: 30px;
+  list-style: none;
+}
+li{
+  margin: 10px;
+  font-size: medium;
+}
+a{
+  
+  font-size: 12px;
+  text-decoration: none;
+  color: #1B1B1B;
+}
+footer{
+  text-align: center;
+  margin-top: 100px;
+  border: solid;
+  border-color: rgba(235, 245, 251, 0.94);
+  border-radius: 10px;
+  padding: 20px;
+  background:rgba(235, 245, 251, 0.24);
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+  
+ h1{
+  font-size: 22px;
+ }
+ h2{
+  font-size: 18px;
+ }
+ .main{
+  width: 90%;
+}
+.huzFoto{
+  margin-top: 20px;
+}
+.inside{
+  padding: 5px;
+  margin: 15px;
+}
+.experience{
+  width: 15px;
+}
+.education{
+  width: 15px;
+}
+}
