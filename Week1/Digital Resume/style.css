@@ -30,6 +30,10 @@ body{
 h1{
 color: #2E4425;
 }
+h3{
+  color: #2E4425;
+  font-size: 1.1em;  
+}
 
 hr{
   width: 30%;
@@ -56,7 +60,7 @@ hr{
   border-radius: 10px;
   padding: 15px;
   margin: 25px;
-  height: 130px;
+  min-height: 130px;
   background:rgba(235, 245, 251, 0.24);
   background-image: url(snow.png);
   background-position:right;
@@ -121,7 +125,7 @@ footer{
   font-size: 1.2em;
  }
  h2{
-  font-size: 1.1em;;
+  font-size: 1.1em;
  }
  .main{
   max-width: 90%;
