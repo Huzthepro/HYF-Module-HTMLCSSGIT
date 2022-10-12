@@ -1,3 +1,4 @@
+<hr>
 <strong>2. Week<strong>
 <br>
 CLI Exercise: https://github.com/Huzthepro/favorite-cmd-commands
