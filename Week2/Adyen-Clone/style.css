@@ -1,4 +1,13 @@
 /* ---------------------------------------------------------------------- */
+/* IMPORTANT
+Responsive Design only for 2 size
+1- Tablet (Ipad Air = 820 x 1180)
+2- Phone (Iphone 12 pro = 390 x 844) */
+/* ---------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------- */
 /* STANDART SETTINGS */
 /* ---------------------------------------------------------------------- */
 *{
@@ -13,10 +22,7 @@ body{
   -webkit-text-size-adjust: 100%;
 }
 .standartWidth{
-  padding-right: 21px;
-  padding-left: 16px;
-  max-width: 1248px;
-  max-height: 720px;
+  max-width: 1200px;
   margin: auto;
 }
 .text-left {
@@ -26,14 +32,11 @@ body{
   padding-top: 24px;
 }
 
-
-
 h1{
   font-size: 62px;
   letter-spacing: -0.015em; /* */
   font-weight: 600;
   line-height: 74px;
-
 }
 p{
   font-size: 18px;
@@ -43,23 +46,26 @@ p{
 video{
   width: 100%;
   object-fit: contain;
-  display: block;
 }
 
 /* ---------------------------------------------------------------------- */
 /* NAVBAR */
 /* ---------------------------------------------------------------------- */
+.navTwo{
+  display: none;
+}
 .navtwoItems{
   height: 70px;
-  display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content:space-between;
   align-items: center;
   color: #00112c;
   font-weight: 400;
   line-height: 26px;
-  padding-bottom: 5px;
-
+  padding: 0 20px 0 20px;
+}
+.navtwoItems .dropdown{
+  width: 25px;
 }
 nav{ 
   height: 70px;
@@ -82,6 +88,11 @@ nav ul{
 }
 nav li{
   border-top: 4px solid transparent;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+nav li:hover{
+  border-top: 4px solid #0abf53;
 }
 nav .rightUl li{
  padding-left: 24px;
@@ -114,19 +125,22 @@ nav button{
 
     cursor: pointer;
     padding: 12px 24px;
-    margin: 12px 12px 12px 0;
+    margin: 12px 0 12px 0;
     
     transition: all .2s ease-in-out;
   
     border-radius: 6px;
 }
 
+
 /* ---------------------------------------------------------------------- */
 /* HEADER */
 /* ---------------------------------------------------------------------- */
 header{
+  max-height: 720px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 48px;
   padding-top: 3px;
@@ -143,7 +157,8 @@ header .leftBox{
   max-width: 41.66667%;
 }
 header .rightBox{
-  position: relative;
+  padding-left: 25px;
+  max-height: 672px;
   flex: 0 0 50%;
   max-width: 50%;
 }
@@ -204,6 +219,7 @@ header button:hover{
 .platformSecondRow{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items:top;
   justify-content:space-between;
   margin-bottom: 48px;
@@ -211,7 +227,6 @@ header button:hover{
  .platformSecondRow .platfromdiv{
     flex: 0 0 25%;
     max-width: 25%;
-    position: relative;
     width: 100%;
     padding-right: 48px;
  }
@@ -250,6 +265,8 @@ header button:hover{
   background-color:  #0abf53; 
 }
 #payments h2{
+  text-align: center;
+  margin-bottom: 20px;
   font-size: 32px;
   line-height: 42px;
   color: #fff;
@@ -283,15 +300,18 @@ footer{
 
 
 .footerFirstRow{
+  gap: 15px;
   padding-bottom: 46px;
   padding-top: 96px;
   color: white;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   align-items: top;
 }
 .footerFirstRow ul{
+  
   list-style: none;
 }
 .footerFirstRow li{
@@ -374,6 +394,7 @@ hr{
   padding-bottom: 28px;
   color: white;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -410,12 +431,112 @@ hr{
 /* ---------------------------------------------------------------------- */
 /* RESPOMSIVE */
 /* ---------------------------------------------------------------------- */
-@media screen and (max-width: 820px) {
-  
-	nav{
+
+/* ---------------------------------------------------------------------- */
+/* IMPORTANT
+Responsive Design only for 2 size
+1- Tablet (Ipad Air = 820 x 1180)
+2- Phone (Iphone 12 pro = 390 x 844) */
+/* ---------------------------------------------------------------------- */
+@media screen and (max-width: 1095px) {
+  .standartWidth{
+    padding: 0 20px 0 20px;
+  }
+	#originalNavbar{
     display: none;
   }
-  .navTwo{
-    display: flex;
+  .navtwoItems{
+    padding: 0 20px 0 20px;
   }
+  .navTwo{
+    display: block;
+  }
+  header{
+    align-items: top;
+    max-height: auto;
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+  
+  .standartWidth{
+    padding-right: 16px;
+    padding-left: 16px;
+    max-width: 100 vh;
+    margin: auto;
+  }
+  header{
+    max-height: auto;
+    display: flex;
+    margin-bottom: 48px;
+  }
+  video{
+    width: 342;
+    height: 399;
+  }
+  header h1{
+    font-size: 40px;
+    line-height: 50px;
+  }
+  header button{
+  width: 100%;
+}
+  header .leftBox{
+    flex: 0 0 95.66667%;
+    max-width: 95.66667%;
+  }
+  header .rightBox{
+    position: relative;
+    flex: 0 0 95%;
+    max-width: 95%;
+  }
+
+  .brands{
+    flex-wrap: wrap;
+  }
+  .brands div{
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+
+  .platformFirstRow{
+    width: 100%;
+  }
+  .platformFirstRow h2{
+    line-height: 45px;
+  }
+  
+  .platformSecondRow .platfromdiv{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .platformSecondRow .platfromdiv p{
+    margin-bottom: 28px;
+  }
+
+  .footerFirstRow {
+    padding-top: 48px;
+  }
+
+  .footerFirstRow ul{
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+  .mailSection{
+    margin-top: 40px;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .footerSecondRow{
+  
+    padding-top: 36px;
+    padding-bottom: 28px;
+    
+    flex-direction:column-reverse;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  
 }
