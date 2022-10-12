@@ -175,7 +175,7 @@ header button{
 
     cursor: pointer;
     padding: 12px 24px;
-    margin: 12px 12px 12px 0;
+    margin: 12px 0 12px 0;
     
     transition: all .2s ease-in-out;
   
@@ -467,14 +467,11 @@ Responsive Design only for 2 size
     margin: auto;
   }
   header{
-    max-height: auto;
+    max-height: fit-content;
     display: flex;
     margin-bottom: 48px;
   }
-  video{
-    width: 342;
-    height: 399;
-  }
+  
   header h1{
     font-size: 40px;
     line-height: 50px;
@@ -483,13 +480,14 @@ Responsive Design only for 2 size
   width: 100%;
 }
   header .leftBox{
-    flex: 0 0 95.66667%;
-    max-width: 95.66667%;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
   header .rightBox{
-    position: relative;
-    flex: 0 0 95%;
-    max-width: 95%;
+    
+  padding-left: 0px;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 
   .brands{
