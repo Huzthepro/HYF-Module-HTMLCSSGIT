@@ -16,57 +16,64 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav id="originalNavbar" class="standartWidth ">
-    <ul class="leftUl">
-      <li> <img class="logo" src="images/logo.png" alt="Adyen logo"></li>
-      <li> <span>Products<img src="images/dropdownimage.png" alt="dropdown image"></span></li>
-      <li> <span>Businesses we serve 	<img src="images/dropdownimage.png" alt="dropdown image"></span></li>
-      <li> <span>About<img src="images/dropdownimage.png" alt="dropdown image"></span></li>
-      <li> <span>Documentation & resources 	<img src="images/dropdownimage.png" alt="dropdown image"></span></li>
-      <li> <span>Pricing</span></li>
-    </ul>
-    <ul class="rightUl">
-      <li> <img class="search" src="images/search.png" alt="Search image"></li>
-      <li> <span>Log in</span></li>
-      <li> <button>Contact us</button></li>
-    </ul>
-  </nav>
-  <!-- NAVBAR 2 -->
-  <nav class="navTwo">
-      <ul class="navtwoItems">
-        <li> <img class="logo" src="images/logo.png" alt="Adyen logo"></li>
-        <li> <img class="dropdown" src="images/dropdown.png" alt="Adyen logo"></li>
-    </ul>
-  </nav>
+  
 
   <!-- HEADER -->
   <header class="standartWidth">
-    <div class="leftBox"> <!-- LEFT -->
-      <h1 class="padding-top-24 text-left">
-       <strong>
-        Engineered for ambition
-       </strong> 
-      </h1>
-      <p class="padding-top-24 text-left">
-        End-to-end payments, data, and financial management in a single solution. Meet the financial technology platform that helps you realize your ambitions faster.
-      </p>
-      <button>
-        Talk to our team
-      </button>
-    </div>
 
-    <div class="rightBox"> <!-- RIGHT -->
-      <video autoplay muted playsinline loop allowfullscreen>
-        <source src="images/headerVideo.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-      </video>
-    </div>
+    <!-- LOGO -->
+    <img class="logo" src="images/logo.png" alt="Adyen logo">
+    
+    <!-- NAVBAR -->
+    <nav id="originalNavbar">
+      <ul class="leftUl">  
+        <li> <span>Products<img src="images/dropdownimage.png" alt="dropdown image"></span></li>
+        <li> <span>Businesses we serve 	<img src="images/dropdownimage.png" alt="dropdown image"></span></li>
+        <li> <span>About<img src="images/dropdownimage.png" alt="dropdown image"></span></li>
+        <li> <span>Documentation & resources 	<img src="images/dropdownimage.png" alt="dropdown image"></span></li>
+        <li> <span>Pricing</span></li>
+      </ul>  
+    </nav>
 
+    <!-- RIGHT SIDE -->
+    <ul class="rightUl">
+      <li> <img class="search" src="images/search.png" alt="Search image"></li>
+      <li> Log in</li>
+      <li> <button>Contact us</button></li>
+    </ul>
+
+    <!-- NAVBAR 2 -->
+    <nav class="navTwo">
+          <img class="dropdown" src="images/dropdown.png" alt="Dropdown png">
+    </nav>
   </header>
 
   <!-- MAIN CONTENT -->
   <main> 
+
+    <!-- TOP SECTION -->
+    <section id="sectionOne" class="standartWidth">
+      <div class="leftBox"> <!-- LEFT -->
+        <h1 class="padding-top-24 text-left">
+        <strong>
+          Engineered for ambition
+        </strong> 
+        </h1>
+        <p class="padding-top-24 text-left">
+          End-to-end payments, data, and financial management in a single solution. Meet the financial technology platform that helps you realize your ambitions faster.
+        </p>
+        <button>
+          Talk to our team
+        </button>
+      </div>
+
+      <div class="rightBox"> <!-- RIGHT -->
+        <video autoplay muted playsinline loop allowfullscreen>
+          <source src="images/headerVideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
 
     <!-- BRANDS(1) -->
     <section id="brands" class="brands standartWidth">
@@ -130,7 +137,8 @@
   <!-- FOOTER -->
   <footer>
     <section class="footerContainer standartWidth">
-      <div class="footerFirstRow"> <!-- First row -->
+      <!-- First row -->
+      <div class="footerFirstRow"> 
         <ul>
           <li><strong>About</strong></li> <!-- First row 1.List-->
           <li>Careers</li>
@@ -180,11 +188,12 @@
 
       <hr>
 
-      <div class="footerSecondRow"> <!-- Second row -->
+      <!-- Second row -->
+      <div class="footerSecondRow"> 
         <ul><!-- Second row LEFT -->
-          <li>Privacy</li>
-          <li>· Cookies</li>
-          <li>· Disclaimer</li>
+          <li><a href="#">Privacy</a> </li>
+          <li><a href="#">· Cookies</a></li>
+          <li><a href="#">· Disclaimer</a></li>
           <li>· ©2022 Adyen</li>
         </ul>
 
