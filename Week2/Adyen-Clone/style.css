@@ -1,11 +1,7 @@
-/* ---------------------------------------------------------------------- */
 /* IMPORTANT
 Responsive Design only for 2 size
-1- Tablet (Ipad Air = 820 x 1180)
-2- Phone (Iphone 12 pro = 390 x 844) */
-/* ---------------------------------------------------------------------- */
-
-
+1- Tablet (Ipad Air = 1248)
+2- Phone (Iphone 12 pro = 768) */
 
 /* ---------------------------------------------------------------------- */
 /* STANDART SETTINGS */
@@ -15,21 +11,12 @@ Responsive Design only for 2 size
   padding: 0;
   box-sizing: border-box;
 }
+
 body{
   color: #00112c;
-  font-family: "Fakt",sans-serif,Helvetica,Arial; /* the Fakt that this is not a free font make my website less similar */
+  font-family: "Fakt",sans-serif,Helvetica,Arial; /* the Fakt that this is not a free font; make my website less similar :( */
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
-}
-.standartWidth{
-  max-width: 1200px;
-  margin: auto;
-}
-.text-left {
-  text-align: left !important;
-}
-.padding-top-24{
-  padding-top: 24px;
 }
 
 h1{
@@ -38,131 +25,190 @@ h1{
   font-weight: 600;
   line-height: 74px;
 }
+
 p{
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
 }
+
 video{
   width: 100%;
   object-fit: contain;
 }
 
 /* ---------------------------------------------------------------------- */
-/* NAVBAR */
+/* My custom classes for easy changes in HTML and less crowded CSS*/
 /* ---------------------------------------------------------------------- */
-.navTwo{
-  display: none;
-}
-.navtwoItems{
-  height: 70px;
-  flex-direction: row;
-  justify-content:space-between;
-  align-items: center;
-  color: #00112c;
-  font-weight: 400;
-  line-height: 26px;
-  padding: 0 20px 0 20px;
-}
-.navtwoItems .dropdown{
-  width: 25px;
-}
-nav{ 
-  height: 70px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  color: #00112c;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 26px;
-  padding-bottom: 5px;
-  letter-spacing: 0.26px;
-}
-nav ul{
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-nav li{
-  border-top: 4px solid transparent;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-nav li:hover{
-  border-top: 4px solid #0abf53;
-}
-nav .rightUl li{
- padding-left: 24px;
-}
-nav .leftUl li{
-  padding-right: 24px;
- }
- nav li span img{
-  margin-left: 5px;
-}
-nav .logo{
-  width: 90px;
-  height: 30px;
-  margin-top: 7px;
-}
-nav .search{
-  width: 16px;
-  margin-top: 7px;
-}
-nav button{
-  color: #fff;
-    background-color: #0abf53;
-    border-color: #0abf53;
-    border: 1px solid transparent;
-    font-size: 1rem;
-    
-    line-height: 16px;
-    font-weight: 600;
-    text-decoration: none;
-
-    cursor: pointer;
-    padding: 12px 24px;
-    margin: 12px 0 12px 0;
-    
-    transition: all .2s ease-in-out;
-  
-    border-radius: 6px;
+.standartWidth{
+  max-width: 1200px; /* ADYEN STYLE */
+  margin: auto;
 }
 
+.text-left {
+  text-align: left !important;
+}
+
+.padding-top-24{
+  padding-top: 24px;
+}
 
 /* ---------------------------------------------------------------------- */
 /* HEADER */
 /* ---------------------------------------------------------------------- */
 header{
-  max-height: 720px;
+  /* Position */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px; 
+  /* Size */
+  height: 70px;
+  /* Design */    
+  color: #00112c;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.26px;
+}
+
+header .logo{
+  margin-top: 7px;
+
+  width: 90px;
+  height: 30px;
+
+  cursor: pointer;
+}
+
+/* ----------------------------------*/
+
+/* vvv---Right UL---vvv */
+header .rightUl{
+  /* Position */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* Design */
+  list-style: none;
+  cursor: pointer;
+}
+header .rightUl li{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+
+  border-top: 4px solid transparent;
+ }
+ header .rightUl li:hover{
+  border-top: 4px solid #0abf53;
+}
+
+header .rightUl .search{
+  margin-top: 7px;
+  width: 16px;
+}
+header .rightUl button{
+  /* Position */
+  padding: 12px 24px;
+  margin: 12px 0 12px 0;
+  
+  /* Design */
+    background-color: #0abf53;
+
+    border-color: #0abf53;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    
+    color: #fff;
+    font-size: 1rem;
+    line-height: 16px;
+    font-weight: 600;
+    text-decoration: none;
+
+    cursor: pointer;
+    
+    transition: all .2s ease-in-out;  
+}
+header .rightUl button:hover{
+  background-color: #109143;
+}
+/* ^^^---Right UL---^^^ */
+
+/* ----------------------------------*/
+
+/* vvv---NAVBAR---vvv */
+nav ul{
+  /* Position */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 95px;
+  /* Design */
+  list-style: none;
+  cursor: pointer;
+}
+nav li{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+
+  border-top: 4px solid transparent; 
+}
+nav li:hover{
+  border-top: 4px solid #0abf53;
+}
+ nav li span img{
+  margin-left: 5px;
+}
+/* ^^^---NAVBAR---^^^ */
+
+/* ----------------------------------*/
+
+/* vvv---NAVBAR 2---vvv */
+.navTwo{
+  display: none;
+}
+.navTwo img{
+  width: 24px;
+}
+/* ^^^---NAVBAR 2---^^^ */
+
+
+/* ---------------------------------------------------------------------- */
+/* SECTION 1 */
+/* ---------------------------------------------------------------------- */
+#sectionOne{
+  /* Position */
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 48px;
   padding-top: 3px;
+  margin-bottom: 48px;
+  /* Size */
+  max-height: 720px;
+  /* Design */
   letter-spacing: 1.5px;
 }
-header h1{
+#sectionOne h1{
   margin-bottom: 8px;
 }
-header p{
+#sectionOne p{
   margin-bottom: 8px;
 }
-header .leftBox{
+#sectionOne .leftBox{
   flex: 0 0 41.66667%;
   max-width: 41.66667%;
 }
-header .rightBox{
+#sectionOne .rightBox{
   padding-left: 25px;
   max-height: 672px;
   flex: 0 0 50%;
   max-width: 50%;
 }
-header button{
+#sectionOne button{
   color: #fff;
     background-color: #0abf53;
     border-color: #0abf53;
@@ -181,7 +227,7 @@ header button{
   
     border-radius: 6px;
 }
-header button:hover{
+#sectionOne button:hover{
     background-color: #109143;
 }
 
@@ -193,7 +239,8 @@ header button:hover{
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 190px;
+
+  height: 140px;
 }
 .brands img{
   max-width: 100%;
@@ -205,6 +252,7 @@ header button:hover{
 .platform{
   padding-top: 96px;
   padding-bottom: 48px;
+
   background-color: #f3f6f9;
 }
 .platformFirstRow{
@@ -215,31 +263,34 @@ header button:hover{
   padding-bottom: 36px;
 }
 
-
 .platformSecondRow{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items:top;
   justify-content:space-between;
+
   margin-bottom: 48px;
 }
  .platformSecondRow .platfromdiv{
+  padding-right: 48px;
+
     flex: 0 0 25%;
     max-width: 25%;
     width: 100%;
-    padding-right: 48px;
  }
  .platform img{
-  width: 24px;
   margin-bottom: 24px;
+
+  width: 24px;
   }
   .platformSecondRow h4{
+    margin-bottom: 12px;
+
     letter-spacing: -0.015em;
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
-    margin-bottom: 12px;
   }
   .platformSecondRow p{
     color: rgba(46, 46, 46, 0.719);
@@ -257,38 +308,46 @@ header button:hover{
 /* Payments */
 /* ---------------------------------------------------------------------- */
 #payments{
+  /* Position */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* Size */
   height: 300px;
+  /* Design */
   background-color:  #0abf53; 
 }
 #payments h2{
-  text-align: center;
   margin-bottom: 20px;
-  font-size: 32px;
-  line-height: 42px;
+
   color: #fff;
+  font-size: 32px;
+  text-align: center;
+  line-height: 42px;
 }
 #payments button{
-  color: #00112c;
+    /* Position */
+    padding: 12px 24px;
+    margin: 12px 12px 12px 0;
+     /* Design */
     background-color: #fff;
-    border-color: #fff;
-    border: 1px solid transparent;
+
+    border: none;
+    border-radius: 6px;
+
+    color: #00112c;
     font-size: 1rem;
-    
     line-height: 16px;
     font-weight: 600;
     text-decoration: none;
 
     cursor: pointer;
-    padding: 12px 24px;
-    margin: 12px 12px 12px 0;
-    
+
     transition: all .2s ease-in-out;
-  
-    border-radius: 6px;
+}
+#payments button:hover{
+    background-color: rgb(235, 233, 233);
 }
 
 /* ---------------------------------------------------------------------- */
@@ -298,44 +357,58 @@ footer{
   background: #00112c;
 }
 
-
 .footerFirstRow{
-  gap: 15px;
-  padding-bottom: 46px;
-  padding-top: 96px;
-  color: white;
+  /* Position */
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: top;
+
+  gap: 15px;
+  padding-top: 96px;
+  padding-bottom: 46px;
+  
+  /* Design */
+  color: white;
 }
 .footerFirstRow ul{
-  
   list-style: none;
 }
 .footerFirstRow li{
   padding-bottom: 6px;
+
   font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
+  font-weight: 400;
+  line-height: 26px;
+
+  cursor: pointer;
 }
+.footerFirstRow li:hover{
+  text-decoration: underline;
+}
+
 
 .mailSection{
   flex: 0 0 31%;
   max-width: 31%;
 }
 input {
+  /* Position */
   padding: 10px;
+  /* Size */
   width: 80%;
+  height: 50px;
+  /* Design */
+  border: solid 1px rgba(255, 255, 255, 0.281);
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
-  height: 50px;
-  border: solid 1px rgba(255, 255, 255, 0.281);
+
   background-color: transparent;
 }
 .footerFirstRow h2{
   margin-bottom: 12px;
+
   font-weight: 600;
   font-size: 16px;
   line-height: 26px;
@@ -343,122 +416,155 @@ input {
 .footerFirstRow p{
   padding-top: 10px;
   padding-bottom: 10px;
-  font-size: 13px;
-    line-height: 18px;
-    color: #f3f6f979;
+
+  font-size: 11px;
+  line-height: 18px;
+  color: #f3f6f979;
 }
 .classyButton{
   display: flex;
   flex-direction: row;
-  
 }
+ 
 .classyButton img{
-  background-color: #f3f6f9;
   padding: 15px 20px 15px 20px;
+
+  background-color: #f3f6f9;
+  
   border-bottom-right-radius: 7px;
   border-top-right-radius: 7px;
-}
 
+  cursor: pointer;
+}
 .social{
-  margin-top: 10px;
   display: flex;
   flex-direction: row;
+  margin-top: 10px;
 }
 .mailSection a{
+color: #f3f6f979;
 text-decoration: underline;
 }
-.mailSection p{
-  font-size: 11px;
-}
 .social img{
+  padding: 10px;
+
+  border: solid 1px rgba(255, 255, 255, 0.199);
   border-radius: 5px;
   margin-right: 14px;
-  padding: 10px;
-  border: solid 1px rgba(255, 255, 255, 0.199);
+
+  cursor: pointer;
 }
-
-
-
+.social img:hover{
+  background-color: #bbbbbb3d;  /* THEY TAKE THEM FROM FONT AWSOME OR SMTH. SO THEY CAN CHANGE IMAGE COLOR TOO. RIGHT NOW THIS IS A LUXURY FOR ME :( */
+}
 
 
 hr{
   height: 0px;
+  
   border: none;
   border-top: 0.1px solid rgba(255, 255, 255, 0.247);
 }
 
 
 .footerSecondRow{
-  
-  padding-top: 36px;
-  padding-bottom: 28px;
-  color: white;
+  /* Position */
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  padding-top: 36px;
+  padding-bottom: 28px;
+  /* Design */
+  color: white;
 }
 .footerSecondRow ul{
-  list-style: none;
-  font-size: 12px;
+  /* Position */
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-.footerSecondRow li{
-  padding-right: 6px;
+  /* Design */
+  list-style: none;
+  font-size: 12px;
   color: #f0f0f0ab;
 }
+.footerSecondRow a{
+  color: #f0f0f0ab;
+  text-decoration: none;
+  padding-right: 6px;
+
+  cursor: pointer;
+}
+.footerSecondRow a:hover{
+  text-decoration: underline;
+}
+
 .footerSecondRow button{
-  background-color: transparent;
-  font-size: 14px;
-  letter-spacing: 0.07em;
-  font-weight: 600;
-  color: white;
-  border: none;
+  /* Position */
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
+  /* Design */
+  background-color: transparent;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 0.07em;
+  font-weight: 600;
+  
+  border: none;
+
+  cursor: pointer;
 }
 .footerSecondRow button img{
   width: 18px;
 }
 
 
+
 /* ---------------------------------------------------------------------- */
 /* RESPOMSIVE */
 /* ---------------------------------------------------------------------- */
 
-/* ---------------------------------------------------------------------- */
 /* IMPORTANT
 Responsive Design only for 2 size
-1- Tablet (Ipad Air = 820 x 1180)
-2- Phone (Iphone 12 pro = 390 x 844) */
-/* ---------------------------------------------------------------------- */
-@media screen and (max-width: 1095px) {
+1- Tablet (Ipad Air = 1248)
+2- Phone (Iphone 12 pro = 768) */
+
+
+/* ------------------------------- 1248 --------------------------------------- */
+@media screen and (max-width: 1248px) {
   .standartWidth{
     padding: 0 20px 0 20px;
   }
-	#originalNavbar{
-    display: none;
-  }
-  .navtwoItems{
-    padding: 0 20px 0 20px;
-  }
-  .navTwo{
-    display: block;
-  }
+
   header{
     align-items: top;
     max-height: auto;
   }
 
+	#originalNavbar{
+    display: none;
+  }
+  header .rightUl{
+    display: none;
+  }
+  .navTwo{
+    display: block;
+  }
+
+  .mailSection{
+    margin-top: 40px;
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+
 }
 
-@media screen and (max-width: 650px) {
+/* ------------------------------- 768 --------------------------------------- */
+@media screen and (max-width: 768px) {
   
   .standartWidth{
     padding-right: 16px;
@@ -466,29 +572,32 @@ Responsive Design only for 2 size
     max-width: 100 vh;
     margin: auto;
   }
-  header{
+
+
+  #sectionOne{
     max-height: fit-content;
     display: flex;
     margin-bottom: 48px;
+    overflow: hidden;
   }
-  
-  header h1{
+  #sectionOne h1{
     font-size: 40px;
     line-height: 50px;
   }
-  header button{
+  #sectionOne button{
   width: 100%;
 }
-  header .leftBox{
+  #sectionOne .leftBox{
     flex: 0 0 100%;
     max-width: 100%;
   }
-  header .rightBox{
-    
-  padding-left: 0px;
+  #sectionOne .rightBox{
+    padding-left: 0px;
     flex: 0 0 100%;
     max-width: 100%;
   }
+
+
 
   .brands{
     flex-wrap: wrap;
@@ -498,13 +607,14 @@ Responsive Design only for 2 size
     max-width: 33.33333%;
   }
 
+
+
   .platformFirstRow{
     width: 100%;
   }
   .platformFirstRow h2{
     line-height: 45px;
   }
-  
   .platformSecondRow .platfromdiv{
     flex: 0 0 100%;
     max-width: 100%;
@@ -513,10 +623,11 @@ Responsive Design only for 2 size
     margin-bottom: 28px;
   }
 
+
+
   .footerFirstRow {
     padding-top: 48px;
   }
-
   .footerFirstRow ul{
     flex: 0 0 45%;
     max-width: 45%;
@@ -526,14 +637,14 @@ Responsive Design only for 2 size
     flex: 0 0 100%;
     max-width: 100%;
   }
-
+  
   .footerSecondRow{
+    flex-direction:column-reverse;
+    align-items: flex-start;
   
     padding-top: 36px;
     padding-bottom: 28px;
     
-    flex-direction:column-reverse;
-    align-items: flex-start;
     gap: 30px;
   }
   
